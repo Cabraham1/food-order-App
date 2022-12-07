@@ -2,6 +2,7 @@ import React from "react";
 import Card from "../UI/Card";
 import classes from "./AvailableMeals.module.css";
 import MealItem from "./MealItem/MealItem"
+import MealItemForm from "./MealItem/MealItemForm";
 
 const DUMMY_MEALS = [
   {
@@ -32,6 +33,7 @@ const DUMMY_MEALS = [
 const AvailableMeals = (props) => {
   const mealList = DUMMY_MEALS.map((meal) => (
     <MealItem
+      id={props.id}
       key={meal.id}
       name={meal.name}
       description={meal.description}

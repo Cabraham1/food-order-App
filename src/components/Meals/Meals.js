@@ -5,6 +5,7 @@ const Meals = () => {
   return (
     <React.Fragment>
       <AvailableMeals />
+    
       <MealsSummary />
     </React.Fragment>
   );
